@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Paddle from "../Components/Paddle";
+import Paddle from "./Components/Paddle";
 
 export default function App() {
   return (
