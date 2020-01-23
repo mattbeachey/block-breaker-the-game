@@ -1,4 +1,7 @@
 .gameboard {
+  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 100%;
   position: relative;
   font-family: sans-serif;
   text-align: center;

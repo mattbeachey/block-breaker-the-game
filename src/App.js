@@ -3,6 +3,7 @@ import "./styles.css";
 import Paddle from "./Components/Paddle";
 
 export default function App() {
+  
   return (
     <div className="gameboard">
       <Paddle />
