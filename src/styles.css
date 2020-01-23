@@ -1,4 +1,5 @@
 .gameboard {
+  position: relative;
   font-family: sans-serif;
   text-align: center;
   height: 600px; 
@@ -6,7 +7,4 @@
   background-color: rgba(102, 51, 153, 0.479);
   border: 2px solid rebeccapurple;
   margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }

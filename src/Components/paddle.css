@@ -6,4 +6,11 @@
   background-color: red;
   border-radius: 4px;
   box-shadow: 2px 2px 2px;
+
+  /* positioing */
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
