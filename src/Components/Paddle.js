@@ -3,8 +3,6 @@ import "./paddle.css";
 
 export default function Paddle() {
 
-
-
   const [paddleX, setPaddleX] = useState(0);
   function handleMouse(e) {
     console.log(e.x);
@@ -25,8 +23,8 @@ export default function Paddle() {
   }, [])
 
   return <div className="paddle"
-              style={{
-                left: `${paddleX}px`
+    style={{
+      left: `${paddleX}px`
 
-              }} />;
+    }} />;
 }
