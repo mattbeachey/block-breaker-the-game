@@ -1,4 +1,6 @@
 .paddle {
+  position: absolute;
+  bottom: 10px;
   width: 100px;
   height: 15px;
   background-color: red;
