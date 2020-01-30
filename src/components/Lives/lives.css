@@ -1,0 +1,7 @@
+.lives {
+    color: blue ;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 100%
+}
