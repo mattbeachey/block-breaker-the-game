@@ -30,12 +30,13 @@ export default function reducer(state, action) {
       axios.post("http://localhost:5000/api/v1/hiscores", {
         initials: initials, 
         score: state.score
-      }).then(function(){
-        axios.get("http://localhost:5000/api/v1/hiscores")
-        .then(function(res){
-          console.log(res.data.hiScores)
-        })
-      } )
+      })
+      // .then(function(){
+      //   axios.get("http://localhost:5000/api/v1/hiscores")
+      //   .then(function(res){
+      //     console.log(res.data.hiScores)
+      //   })
+      // } )
       
       // return state;
       return createState(levelOne);

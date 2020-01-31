@@ -23,13 +23,19 @@
     min-height: 100px;
     position: fixed;
     top: 30px;
-    left: 32%;
+    left: 35%;
     background-color: rgba(178, 131, 221, 0.466);
     z-index: 500;
-    transition: 1s;
+    transition: .5s;
 }
 
 .scoresModalHidden {
+    text-align: center;
+    width: 160px;
+    min-height: 100px;
+    position: fixed;
+    top: 30px;
+    left: 35%;
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
 }
