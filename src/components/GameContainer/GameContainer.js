@@ -25,7 +25,7 @@ export default function GameContainer() {
         <Brick key={brick.id} {...brick} />
       ))}
 
-      <Paddle paddleX={state.paddle.x} />
+      {state.isPlaying && <Paddle paddleX={state.paddle.x} />}
       <Ball pos={state.ball} />
       <Score />
       <HiScores />

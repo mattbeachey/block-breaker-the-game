@@ -5,7 +5,8 @@ import {
   DIE,
   BRICK_COLLISION,
   PRESS_START,
-  GAME_OVER
+  GAME_OVER,
+  START_GAME
 } from "./actions";
 import createState from "./createState";
 import levelOne from "../levels/one"
@@ -13,12 +14,16 @@ import axios from "axios";
 
 export default function reducer(state, action) {
   switch (action.type) {
+    case START_GAME:
+      return createState(levelOne, {
+        isPlaying: true,
+      });
     case MOVE_PADDLE:
       return { ...state, paddle: action.payload };
     case ADD_SCORE:
       return {...state, score: state.score + action.payload}
     case DIE:
-      return {...state, lives: state.lives -1}
+      return {...state, lives: state.lives -1, isPlaying: false}
     case MOVE_BALL:
       return { ...state, ball: { ...state.ball, ...action.payload } };
     case PRESS_START:

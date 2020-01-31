@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
 import "./hiScores.css";
 import Axios from "axios";
 
+import {GameContext} from "../../state/context"
 
 
 export default function HiScores() {
-
+    const {state, dispatch, actions} = useContext(GameContext)
     const [hiScores, setHiScores] = useState([])
     const [modalClass, setModalClass] = useState("scoresModalHidden")
 
