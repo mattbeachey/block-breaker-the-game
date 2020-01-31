@@ -1,0 +1,35 @@
+.hiScoresBtn {
+    background-color: blue;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 101%
+}
+
+.hiScoresBtn:hover {
+    background-color: rgb(106, 106, 223);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.scoresModal {
+    opacity: 1;
+    text-align: center;
+    border-radius: 16px;
+    width: 160px;
+    min-height: 100px;
+    position: fixed;
+    top: 30px;
+    left: 32%;
+    background-color: rgba(178, 131, 221, 0.466);
+    z-index: 500;
+    transition: 1s;
+}
+
+.scoresModalHidden {
+    opacity: 0;
+    transition: 1s;
+}
